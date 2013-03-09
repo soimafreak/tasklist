@@ -1,0 +1,13 @@
+= Tasklist
+
+== What is Tasklist
+
+It is siply me playing aroudn with a number of technologies, MongoDB, Python, Django, bootstrap and AngularJS
+
+== Setup
+* Install mongo locally (no auth)
+* Set web server to point to tasklist/task/static
+
+== misc
+
+I'm using sitestatic as th place to pull all the static assets to, everythign should be placed in tasks/static and then pulled int sitestatic using python manage.py collectstatic

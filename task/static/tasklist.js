@@ -1,0 +1,23 @@
+// declare a module
+angular.module('tasklist', []).config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/', {
+    templateUrl: 'partials/home.html',
+  });
+  $routeProvider.when('/add', {
+    templateUrl: 'partials/add.html',
+  });
+  $routeProvider.when('/list', {
+    templateUrl: 'partials/list.html',
+    controller: TaskListCtrl
+  });
+  $routeProvider.when('/test', {
+    templateUrl: 'partials/test.html',
+  });
+}]);
+
+function TaskListCtrl($scope, $http) {
+  $http.get('http://127.0.0.1:8000/api/list/').success(function(response) {
+    $scope.tasks = response.data;
+  });
+ 
+}

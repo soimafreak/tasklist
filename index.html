@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app id="top">
+  <head>
+    <script src="http://tasklist/angular.js"></script>
+    <script src="http://tasklist/tasklist.js"></script>
+    <script src="ui-bootstrap-0.2.0.js"></script>
+    <script src="assets/select2.js"></script>
+    <script src="assets/ui-select2.js"></script>
+    <script src="assets/plunker.js"></script>
+    <script src="assets/app.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+  <header class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li>
+              <a href="#" role="button" class="dropdown-toggle">
+                TaskList <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#add">Add</a></li>
+                <li><a href="#list">list</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div style="margin: 32px;"></div>
+  <div role="main">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <label>Name:</label>
+          <input type="text" ng-model="yourName" placeholder="Enter a name here">
+          <hr>
+          <h1>Hello {{yourName}}!</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
