@@ -15,9 +15,10 @@ angular.module('tasklist', []).config(['$routeProvider', function($routeProvider
   });
 }]);
 
+
 function TaskListCtrl($scope, $http) {
-  $http.get('http://127.0.0.1:8000/api/list/').success(function(response) {
-    $scope.tasks = response.data;
+  $http.get('/tasks.json').success(function(response) {
+    $scope.tasks = response;
   });
  
 }
