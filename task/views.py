@@ -31,6 +31,6 @@ def list(response):
     for task in todo.find():
         tasks.append({ 'task': task['task'], 'detail': task['detail']})
         #tasks.append(task['task'])
-    return HttpResponse(simplejson.dumps(tasks))
+    return HttpResponse(simplejson.dumps(tasks),'application/json')
 
 
