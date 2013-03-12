@@ -1,4 +1,12 @@
-    <ul class="tasksList">
+    <table class="table table-striped">
+      <tr>
+        <th>
+          Task
+        </th>
+        <th>
+          Detail
+        </th>
+      </tr>
       <tr ng-repeat="task in tasks">
         <td>
             {{ task.task }}
@@ -7,4 +15,4 @@
             {{ task.detail }}
         </td>
       </tr>
-    </ul>
+    </table>
