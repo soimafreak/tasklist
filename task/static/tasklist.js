@@ -17,10 +17,8 @@ angular.module('tasklist', []).config(['$routeProvider', function($routeProvider
 
 
 function TaskListCtrl($scope, $http) {
-  $http.get('http://tasklist:8000/api/list/').success(function(response) {
+  $http.get('http://localhost:8000/api/list/').success(function(response) {
     $scope.tasks = response;
   });
 
-  //$scope.tasks=[{"task": "task1", "detail": " task1's description"}];
- 
 }

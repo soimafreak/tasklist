@@ -19,7 +19,7 @@ def add(request):
 
         todo.save(task)
         
-        return HttpResponseRedirect("http://tasklist:8000/static/index.html#/list")
+        return HttpResponseRedirect("http://localhost:8000/static/index.html#/list")
 
 def list(response):
     databaseName = "test"
