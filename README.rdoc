@@ -5,7 +5,8 @@
 It is simply me playing around with a number of technologies, MongoDB, Python, Django, bootstrap and AngularJS
 
 == Setup
-* Install mongo locally (no auth)
+* Install mongo locally (no auth) http://www.mongodb.org/downloads
+* pip install django pymongo
 * reconfigure tasklits/settings.py: STATIC_ROOT = '/path/sitestatic' 
 * python manage.py collectstatic
 * python manage.py runserver
