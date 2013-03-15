@@ -17,3 +17,5 @@ It is simply me playing around with a number of technologies, MongoDB, Python, D
 I'm using sitestatic as the place to pull all the static assets to, everything should be placed in tasks/static and then pulled int sitestatic using python manage.py collectstatic
 
 Because I don't know how / I can't work out how... you can't move the site to / (static_url) because then it fails to find any of the backend services. If you have the python app hooked into a webserver of some sort this should be fine but then you'd modify more code :)
+
+Feel free to take this and make it worth while
